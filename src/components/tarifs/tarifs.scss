@@ -1,0 +1,83 @@
+.tarifs{
+  @include padding-vertical-30();
+  @include container();
+  .tarifs-wrap{
+      .tarifs__blocks{
+        display: flex;
+        gap: 2rem;
+        .tarifs__block{
+          padding: 40px 30px;
+          background-color: $color-pink-act;
+          border-radius: 15px;
+          flex: 1 1 calc((100% / 3) - 2rem);
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          .tarifs__block-top{
+            h5{
+              padding: 0;
+              margin: 0;
+            }
+          }
+          .tarifs__block-middle{
+            ul{
+              list-style-type: none;
+              padding-left: 0;
+              li{
+                padding: 5px 0;
+              }
+              li:before {
+                content: "✔ "; /* Добавляем в качестве маркера символ */
+                padding-right: 10px;
+              }
+            }
+          }
+          .tarifs__block-bottom{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+          }
+        }
+
+      }
+  }
+}
+
+@media #{$tablet-all-only} {
+  .tarifs {
+    @include padding-vertical-30();
+    @include container();
+
+    .tarifs-wrap {
+      .tarifs__blocks {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        .tarifs__block {
+          flex: 1 1 calc((100% / 2) - 1rem);
+          max-width: calc((100% / 2) - 1rem);
+        }
+      }
+    }
+  }
+}
+
+@media #{$mobile-only-two} {
+  .tarifs {
+    @include padding-vertical-30();
+    @include container();
+
+    .tarifs-wrap {
+      .tarifs__blocks {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        .tarifs__block {
+          flex: 1 1 calc((100% / 1));
+          max-width: calc((100% / 1));
+        }
+      }
+    }
+  }
+}

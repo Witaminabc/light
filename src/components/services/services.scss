@@ -1,0 +1,70 @@
+.services{
+  @include container();
+  @include padding-vertical-30();
+  h2{
+    width: auto;
+  }
+}
+.services-wrap{
+  display: flex;
+  flex-direction: column;
+  .services__elem{
+    display: flex;
+    justify-content: space-between;
+    .services__table{
+      width: 70%;
+    }
+    .se-prices{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      .se-prices__elem{
+        position: relative;
+        width: calc(50% - 1rem);
+        display: flex;
+        justify-content: space-between;
+        padding-top:20px;
+        .se-prices__elem-time{
+          position: absolute;
+          font-size: 12px;
+          font-weight: 300;
+          left: 0;
+          top: 40px;
+        }
+        .se-prices__elem-cost{
+          color:$color-red-btn;
+        }
+      }
+    }
+    .services__img{
+      width: 30%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media #{$mobile-to-tablet-only} {
+  .services-wrap {
+
+    .services__elem {
+      flex-wrap: wrap;
+      .services__table{
+        width: 100%;
+        order: 2;
+        .se-prices{
+
+          .se-prices__elem{
+            width: 100%;
+          }
+        }
+      }
+      .services__img {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        padding-top: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.questions{
+  @include container();
+  @include padding-vertical-30();
+  .questions-wrap{
+    display: flex;
+    gap: 2rem;
+    .questions__block{
+      flex:calc((100% /3) - 2rem) ;
+      max-width: calc((100% /3) - 1rem);
+
+
+
+      .questions__block-top{
+        i:nth-child(2){
+          display: none;
+        }
+        display: flex;
+        justify-content: space-between;
+        background-color: $color-pink-act;
+        padding: 20px 30px;
+        border-radius: 15px ;
+      }
+      .questions__block-top_active{
+        border-radius: 15px 15px 0 0;
+
+        i:nth-child(2){
+          display: block;
+        }
+        i:nth-child(3){
+          display: none;
+        }
+
+      }
+      .questions__block-content{
+        display: none;
+        padding: 20px 30px;
+        border-radius:  0 0 15px 15px;
+        background-color: $color-pink-act;
+        ul{
+          padding-left: 10px;
+          //list-style-type: none;
+        }
+      }
+
+    }
+  }
+}
+
+@media #{$tablet-all-only} {
+  .questions {
+
+    .questions-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .questions__block {
+        flex: calc((100% / 2) - 2rem);
+        max-width: calc((100% / 2) - 1rem);
+      }
+    }
+  }
+}
+
+@media #{$mobile-only-two} {
+  .questions {
+
+    .questions-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      .questions__block {
+        flex: calc((100% / 1) );
+        max-width: calc((100% / 1) );
+      }
+    }
+  }
+}

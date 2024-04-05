@@ -1,0 +1,50 @@
+.diploms{
+  @include container();
+    .diploms-blocks{
+      display: flex;
+      justify-content: space-between;
+      .diploms-blocks__main{
+        font-size: 52px;
+        line-height: 52.8px;
+        font-weight: 300;
+      h1{
+        font-weight: 300;
+        font-size: 52px;
+        line-height: 52.8px;
+      }
+        span{
+          font-size: 52px;
+          font-weight: 900;
+        }
+      }
+      ul{
+        padding-left: 0;
+        li{
+          list-style-type: none;
+        }
+        li:before {
+          content:'';
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 5px;
+          height: 25px;
+          width: 25px;
+          background:url("../img/noun-check-5278014 1.svg") no-repeat;
+        }
+      }
+    }
+}
+@media #{$mobile-only-two} {
+  .diploms{
+    @include container();
+    .diploms-blocks {
+      display: flex;
+      flex-wrap: wrap;
+      ul{
+        display: none;
+      }
+      .diploms-blocks__main {
+      }
+    }
+  }
+}
