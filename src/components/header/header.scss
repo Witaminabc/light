@@ -98,7 +98,11 @@
   }
 }
 @media #{$mobile-only-two} {
+  .header{
+    display: none;
+  }
   .header-top {
+
     .header-top__name{
       display: none;
     }
