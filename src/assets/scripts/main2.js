@@ -191,9 +191,7 @@ const swiperOptions5 = {
         nextEl: '.swiperrewiews-button-next',
         prevEl: '.swiperrewiews-button-prev',
     },
-    // freeMode: true,
-    // speed: 5000,
-    // freeModeMomentum: false
+
 };
 
 const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
@@ -209,9 +207,10 @@ const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
                 .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
         });
         $('.questions__block-top').on('click',function (){
-            $(this).next().toggle();
-            $(this).toggleClass('questions__block-top_active');
-
+            // $('.questions__block-top').removeClass('questions__block-top_active');
+            // $('.questions__block-content').hide(1000);
+            $(this).next().slideToggle(1000);
+            $(this).toggleClass('questions__block-top_active',1000);
         })
     });
 })(jQuery);
