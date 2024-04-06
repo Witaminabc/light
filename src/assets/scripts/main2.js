@@ -112,23 +112,6 @@ const swipercompany2 = new Swiper(".swipercompany2", swiperOptions);
 
 
 const swiperOptions3 = {
-    // loop: true,
-    // freeMode: true,
-    // paginationClickable: true,
-    // slidesPerView: 2,
-    // loop: true,
-    // freeMode: true,
-    // spaceBetween: 0,
-    // grabCursor: true,
-    // slidesPerView: 7,
-    // loop: true,
-    // autoplay: {
-    //     delay: 1,
-    //     disableOnInteraction: true
-    // },
-    // freeMode: true,
-    // speed: 5000,
-    // freeModeMomentum: false,
 
     effect: 'coverflow',
     loop: true,
@@ -165,7 +148,7 @@ const swiperOptions3 = {
 
 
     },
-    pagination: {                       //pagination(dots)
+    pagination: {
         el: '.swipersuccess-pagination',
         clickable: true,
     },
@@ -179,6 +162,41 @@ const swiperOptions3 = {
 };
 
 const swipersuccess = new Swiper(".swipersuccess", swiperOptions3);
+
+
+
+
+
+
+
+
+const swiperOptions5 = {
+    slidesPerView: 1.1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+
+
+
+    },
+    navigation: {
+        nextEl: '.swiperrewiews-button-next',
+        prevEl: '.swiperrewiews-button-prev',
+    },
+    // freeMode: true,
+    // speed: 5000,
+    // freeModeMomentum: false
+};
+
+const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
 
 
 
