@@ -246,3 +246,37 @@ h5{
 .middle__button:hover{
   background-color:$color-green-act ;
 }
+
+
+
+
+.title-left{
+  text-align: left;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  padding: 30px 0;
+  position: relative;
+  margin-bottom: 30px;
+  color: #222222;
+  &:after{
+    content: "";
+    width: 70px;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background-color: #61C67E;
+  }
+  &:before{
+    content: "";
+    width: 35px;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: #61C67E;
+  }
+}
