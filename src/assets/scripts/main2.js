@@ -66,6 +66,11 @@ const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
             $('body').removeClass('body_modal');
             $('.header').removeClass('header_modal');
         })
+        $('.main-content-filter__top').on('click',function (){
+            $(this).next().toggleClass('main-content-filter__top-list_show');
+            $(this).toggleClass('main-content-filter__top_open');
+
+        })
 
 
     });
