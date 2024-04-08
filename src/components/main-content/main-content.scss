@@ -145,4 +145,18 @@
 
 }
 
+@media #{$mobile-only-two} {
+  .main-content-blocks {
+
+    .main-content-left, .main-content-right {
+     display: none;
+    }
+
+    .main-content-middle {
+      width: 100%;
+
+    }
+  }
+
+}
 @import './good';
