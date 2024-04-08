@@ -2,6 +2,11 @@
   @include container();
   .header-burger{
     display: none;
+    cursor: pointer;
+  }
+  .mobile-menu_active{
+    opacity: 1;
+    display: block;
   }
 }
 
@@ -22,6 +27,27 @@
   }
 }
 
+
+
+
+.uMenuH ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  padding-left: 0;
+
+  li{
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+    a{
+      font-size:16px;
+      text-decoration: none;
+      color:black;
+    }
+  }
+}
 
 .header-middle {
   display: flex;
@@ -95,49 +121,8 @@
 
 }
 
-//@media #{$tablet-all-only} {
-//  .header-middle {
-//
-//    .header-middle__logo {
-//      max-width: 50%;
-//      max-height: 60px;
-//
-//      img {
-//        width: 100%;
-//        height: 50px;
-//      }
-//    }
-//  }
-//  .header-middle__table {
-//    display: none;
-//  }
-//}
 
-@media #{$mobile-only-two} {
-  .header {
-    //display: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .header-burger{
-      display: block;
-    }
-    .header-middle{
-      .header-middle__social{
-        display: none;
-      }
-      .header-middle__contact{
-        display: none;
-      }
-    }
-  }
-  .header-top {
 
-    .header-top__name {
-      display: none;
-    }
-
-  }
-}
 
 @import './menu';
+@import './menu-mobile';

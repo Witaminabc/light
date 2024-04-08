@@ -183,15 +183,11 @@ const swiperOptions5 = {
             slidesPerView: 2,
             spaceBetween: 40
         },
-
-
-
     },
     navigation: {
         nextEl: '.swiperrewiews-button-next',
         prevEl: '.swiperrewiews-button-prev',
     },
-
 };
 
 const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
@@ -200,7 +196,6 @@ const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
 
 (function($) {
     $(function() {
-
         $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
             $(this)
                 .addClass('active').siblings().removeClass('active')
@@ -212,5 +207,20 @@ const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
             $(this).next().slideToggle(1000);
             $(this).toggleClass('questions__block-top_active',1000);
         })
+        $('.header-burger').on('click',function (){
+            $('.mobile-menu').addClass('mobile-menu_active');
+            $('body').addClass('body_modal');
+            $('.header').addClass('header_modal');
+
+
+
+        })
+        $('.mobile-menu-close').on('click',function (){
+            $('.mobile-menu').removeClass('mobile-menu_active');
+            $('body').removeClass('body_modal');
+            $('.header').removeClass('header_modal');
+        })
+
+
     });
 })(jQuery);
