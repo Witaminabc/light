@@ -2,6 +2,7 @@
   .prices-wrap{
     .prices-tables{
       display: flex;
+      margin-top: 10px;
       padding:10px 20px;
       border-radius: 5px;
       align-items: center;
@@ -99,4 +100,20 @@
     }
 
   }
+}
+@media #{$tablet-landscape-only} {
+  .main-content-blocks {
+    display: flex;
+    gap: 2rem;
+    .main-content-left, .main-content-right {
+      display: none;
+    }
+    .main-content-middle {
+      width: 100%;
+
+
+    }
+
+  }
+
 }
