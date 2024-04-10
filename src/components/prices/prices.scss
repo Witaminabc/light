@@ -101,7 +101,7 @@
 
   }
 }
-@media #{$tablet-landscape-only} {
+@media #{$tablet-all-only} {
   .main-content-blocks {
     display: flex;
     gap: 2rem;
