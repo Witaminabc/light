@@ -1,8 +1,11 @@
 .good{
   //width: calc(50% - 1rem);
-  width: 350px;
+  flex: 1 1 calc(50% - 1rem);
+  max-width: calc(50% - 1rem);
   margin-top: 20px;
+  justify-content: center;
   .good-wrap{
+    width: 350px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
