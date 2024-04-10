@@ -71,7 +71,12 @@ const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
             $(this).toggleClass('main-content-filter__top_open');
 
         })
+        $('.prices-tables').on('click',function (){
+            $(this).next().toggleClass('prices-tables_active');
+            $(this).toggleClass('prices-tables-arrow_active');
 
+        })
 
+        // prices-tables_active
     });
 })(jQuery);

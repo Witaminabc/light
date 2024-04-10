@@ -6,21 +6,24 @@
   display: flex;
   gap: 2rem;
   .main-content-left,.main-content-right{
-    width: calc(25% - 2rem);
+    //width: calc(25% - 2rem);
+    width: 300px;
+
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
   .main-content-middle{
-    width: calc(50% - 1rem) ;
+    width: calc(100% - 600px - 4rem);
     .main-content-middle-container{
-      display: flex;
-      justify-content: center;
+      //display: flex;
+      //width: 100%;
+      //justify-content: center;
       .main-content-middle-wrap{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
+        //display: flex;
+        //flex-wrap: wrap;
+        //gap: 1rem;
+        //justify-content: center;
 
       }
     }
