@@ -1,0 +1,41 @@
+.steps{
+  @include container();
+  @include padding-vertical-30();
+  .steps-wrap{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    .steps__block{
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+      .steps__block-number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        font-size: 32px;
+        height: 114px;
+        width: 114px;
+        border: 1px solid #1B825A;
+      }
+      .steps__block-title{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18.88px;
+        text-align: center;
+      }
+      .steps__block-text{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18.98px;
+        text-align: center;
+      }
+
+
+
+    }
+  }
+}

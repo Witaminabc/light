@@ -61,6 +61,34 @@ const swiperOptions6 = {
 const swiperslaidering = new Swiper(".swiperslaidering", swiperOptions6);
 
 
+const swiperOptions7 = {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        },
+    },
+    navigation: {
+        nextEl: '.swiperslaidering-button-next',
+        prevEl: '.swiperslaidering-button-prev',
+    },
+    pagination: {
+        el: '.swipergood-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+};
+
+const goodslaidering = new Swiper(".goodslaidering", swiperOptions7);
+
+
 
 
 
