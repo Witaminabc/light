@@ -1,10 +1,10 @@
 .header {
-  @include container();
-  .header-burger{
+  .header-burger {
     display: none;
     cursor: pointer;
   }
-  .mobile-menu_active{
+
+  .mobile-menu_active {
     opacity: 1;
     display: block;
   }
@@ -28,36 +28,121 @@
 }
 
 
-
-
-.uMenuH ul{
+.uMenuH ul {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 0;
   padding-left: 0;
 
-  li{
+  li {
     list-style-type: none;
     padding: 20px;
     text-align: center;
-    a{
-      font-size:16px;
+
+    a {
+      font-size: 16px;
       text-decoration: none;
-      color:black;
+      color: black;
     }
   }
 }
 
+.header-menu-under {
+  height: 65px;
+  background-color: #071F16;
+
+  .top-menu-wrapper {
+    @include container();
+    height: 65px;
+    .uMenuH{
+      height: 65px;
+      ul{
+        height: 65px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        li{
+          padding: 0;
+        }
+        .header-search{
+          position: relative;
+          .header-search-img{
+            position: absolute;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            right: 20px;
+            top: 0;
+            img{
+
+            }
+          }
+          input{
+            width: 281px;
+            height: 42px;
+            border-radius: 90px ;
+            border: 1px solid black;
+            padding: 0 20px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.4px;
+            text-align: left;
+
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+  .uMenuH ul li a {
+    color: white;
+
+  }
+}
+
 .header-middle {
+  @include container();
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 65px;
   margin: 20px 0;
+  .header-contacts-end{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+.header-middle__adress{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.85px;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  img{
+    margin: 5px 5px 0 0;
+  }
+
+}
+.header-middle__ordercall{
+  width: 164px;
+  height: 44px;
+  border-radius: 5px ;
+  background-color: #1B825A;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
   .header-middle__logo {
-    width: 251px;
+    width: 200px;
 
     img {
       width: 100%;
@@ -97,9 +182,12 @@
   }
 
   .header-middle__contact {
-    width: 20%;
     line-height: 20px;
     display: flex;
+    align-items: flex-start;
+    img{
+      margin: 5px 5px 0 0;
+    }
     //justify-content: center;
 
     div {
@@ -120,8 +208,6 @@
   }
 
 }
-
-
 
 
 @import './menu';
