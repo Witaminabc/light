@@ -1,0 +1,29 @@
+.objects{
+  @include container();
+  .objects-wrap{
+    display: flex;
+    gap: 3rem;
+    .objects__block{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18.88px;
+      text-align: center;
+      .objects__block-img{
+        img{
+          width: 100%;
+        }
+      }
+      .object-href{
+        a{
+          line-height: 18.88px;
+          color: #1B825A;
+        }
+      }
+    }
+  }
+
+}
+
