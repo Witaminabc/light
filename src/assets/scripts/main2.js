@@ -38,6 +38,30 @@ const swiperOptions5 = {
 
 const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
 
+const swiperOptions6 = {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 1,
+            spaceBetween: 40
+        },
+    },
+    navigation: {
+        nextEl: '.swiperslaidering-button-next',
+        prevEl: '.swiperslaidering-button-prev',
+    },
+};
+
+const swiperslaidering = new Swiper(".swiperslaidering", swiperOptions6);
+
+
+
 
 
 (function($) {
