@@ -88,7 +88,32 @@ const swiperOptions7 = {
 
 const goodslaidering = new Swiper(".goodslaidering", swiperOptions7);
 
+const swiperOptions8 = {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+    },
+    // navigation: {
+    //     nextEl: '.swiperslaidering-button-next',
+    //     prevEl: '.swiperslaidering-button-prev',
+    // },
+    pagination: {
+        el: '.swiperourwork-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+};
 
+const swiperourwork = new Swiper(".swiperourwork", swiperOptions8);
 
 
 

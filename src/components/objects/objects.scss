@@ -1,5 +1,6 @@
 .objects{
   @include container();
+  @include padding-vertical-30();
   .objects-wrap{
     display: flex;
     gap: 3rem;
