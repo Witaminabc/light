@@ -47,7 +47,9 @@ $desktop-only: "#{$screen} and (min-width:#{map-get($breakpoints, 'desktop')}px)
 $desktop-all-only: "#{$screen} and (min-width:#{map-get($breakpoints, 'desktop')}px) and (max-width:#{map-get($breakpoints, 'fullhd') - 1}px)";
 //8
 $desktop-wide: "#{$screen} and (min-width:#{map-get($breakpoints, 'desktop-wide')}px)";
-$desktop-wide-only: "#{$screen} and (min-width:#{map-get($breakpoints, 'desktop-wide')}px) and (max-width:#{map-get($breakpoints, 'desktop-wide') - 1}px)";
+//$desktop-wide-only: "#{$screen} and (min-width:#{map-get($breakpoints, 'desktop-wide')}px) and (max-width:#{map-get($breakpoints, 'desktop-wide') - 1}px)";
+
+$desktop-wide-only: "(min-width:#{map-get($breakpoints, 'desktop')}px) and (max-width:#{map-get($breakpoints, 'desktop-wide') - 1}px)";
 //9
 $fullhd: "#{$screen} and (min-width:#{map-get($breakpoints, 'fullhd')}px)";
 $fullhd-only: "#{$screen} and (min-width:#{map-get($breakpoints, 'fullhd')}px) and (max-width:#{map-get($breakpoints, 'ultra') - 1}px)";

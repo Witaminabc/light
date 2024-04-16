@@ -32,18 +32,6 @@
         font-size: 16px;
         line-height: 24px;
 
-        //&:after {
-        //  content: "";
-        //  width: 50%;
-        //  height: 2px;
-        //  display: inline-block;
-        //  position: absolute;
-        //  color: black;
-        //  top: 45px;
-        //  left: calc(100% - 1rem);
-        //  font-size: 14px;
-        //  background: linear-gradient(90deg, rgba(97, 198, 126, 0) 0%, #61C67E 50%, rgba(97, 198, 126, 0) 100%);
-        //}
       }
 
     }
@@ -60,31 +48,7 @@
 
 @media #{$mobile-only-two} {
   .arrange {
-    .arrange-wrap {
-      display: flex;
-      flex-wrap: wrap;
-      .arrange__block {
-        width: 100%;
-        margin-bottom: 50px;
-        .arrange__block-text {
-          width: 50%;
-
-
-          &:after {
-            content: "";
-            width: 2px;
-            height: 50px;
-            display: inline-block;
-            position: absolute;
-            color: black;
-            top: 110%;
-            left: 50%;
-            font-size: 14px;
-            background: linear-gradient( rgba(97, 198, 126, 0) 0%, #61C67E 50%, rgba(97, 198, 126, 0) 100%);
-          }
-        }
-      }
-    }
+    display: none;
   }
 
-}
+  }

@@ -70,3 +70,26 @@
     order: 1;
   }
   }
+
+@media #{$mobile-only-two} {
+  .slaidering {
+    .slaidering-wrap {
+      .slaidering__blocks {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        .slaidering__block {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .slaidering:nth-child(odd){
+    .slaidering__block:nth-child(1) {
+      order: 1;
+    }
+    .slaidering__block:nth-child(2) {
+      order: 2;
+    }
+  }
+}

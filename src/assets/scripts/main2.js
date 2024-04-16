@@ -16,30 +16,30 @@ import jQuery from 'jquery';
 
 
 
-const swiperOptions5 = {
-    slidesPerView: 1.1,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: true
-    },
-    breakpoints: {
-        767: {
-            slidesPerView: 2,
-            spaceBetween: 40
-        },
-    },
-    navigation: {
-        nextEl: '.swiperrewiews-button-next',
-        prevEl: '.swiperrewiews-button-prev',
-    },
-};
-
-const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
+// const swiperOptions5 = {
+//     slidesPerView: 1.1,
+//     spaceBetween: 20,
+//     loop: true,
+//     autoplay: {
+//         delay: 5000,
+//         disableOnInteraction: true
+//     },
+//     breakpoints: {
+//         767: {
+//             slidesPerView: 2,
+//             spaceBetween: 40
+//         },
+//     },
+//     navigation: {
+//         nextEl: '.swiperrewiews-button-next',
+//         prevEl: '.swiperrewiews-button-prev',
+//     },
+// };
+//
+// const swiperrewiews = new Swiper(".swiperrewiews", swiperOptions5);
 
 const swiperOptions6 = {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
     autoplay: {
@@ -62,7 +62,7 @@ const swiperslaidering = new Swiper(".swiperslaidering", swiperOptions6);
 
 
 const swiperOptions7 = {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 20,
     loop: true,
     autoplay: {
@@ -70,7 +70,15 @@ const swiperOptions7 = {
         disableOnInteraction: true
     },
     breakpoints: {
+        400: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        },
         767: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        },
+        1280: {
             slidesPerView: 4,
             spaceBetween: 40
         },
@@ -89,7 +97,7 @@ const swiperOptions7 = {
 const goodslaidering = new Swiper(".goodslaidering", swiperOptions7);
 
 const swiperOptions8 = {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
     autoplay: {
@@ -134,7 +142,7 @@ const swiperourwork = new Swiper(".swiperourwork", swiperOptions8);
             $('.mobile-menu').addClass('mobile-menu_active');
             $('body').addClass('body_modal');
             $('.header').addClass('header_modal');
-
+            $('.banner').addClass('banner-none');
 
 
         })
@@ -142,12 +150,9 @@ const swiperourwork = new Swiper(".swiperourwork", swiperOptions8);
             $('.mobile-menu').removeClass('mobile-menu_active');
             $('body').removeClass('body_modal');
             $('.header').removeClass('header_modal');
+            $('.banner').removeClass('banner-none');
         })
-        $('.main-content-filter__top').on('click',function (){
-            $(this).next().toggleClass('main-content-filter__top-list_show');
-            $(this).toggleClass('main-content-filter__top_open');
 
-        })
         $('.prices-tables').on('click',function (){
             $(this).next().toggleClass('prices-tables_active');
             $(this).toggleClass('prices-tables-arrow_active');

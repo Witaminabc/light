@@ -34,8 +34,18 @@
         text-align: center;
       }
 
-
-
+    }
+  }
+}
+@media #{$mobile-only-two} {
+  .steps {
+    .steps-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      .steps__block {
+        width: calc(50% - 1rem);
+      }
     }
   }
 }

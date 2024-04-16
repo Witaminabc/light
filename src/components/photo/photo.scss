@@ -31,3 +31,21 @@
     }
   }
 }
+@media #{$mobile-only-two} {
+  .photo {
+    .photo-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+        .photo__block {
+        display: flex;
+          .photo__block-img{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+      }
+    }
+  }
+}

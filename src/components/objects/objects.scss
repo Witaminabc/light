@@ -27,4 +27,30 @@
   }
 
 }
+@media #{$mobile-only-two}{
+  .objects {
+    .objects-wrap {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      .objects__block {
+        width: calc(50% - 1rem);
+      }
+    }
+  }
+}
+@media #{$tablet-all-only}{
+  .objects {
+    .objects-wrap {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      .objects__block {
+        width: calc((100% / 3) - 2rem );
+      }
+    }
+  }
+}
 

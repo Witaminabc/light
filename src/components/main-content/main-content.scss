@@ -2,16 +2,11 @@
   @include container();
   @include padding-vertical-30();
 }
-
 .main-content-blocks {
   display: flex;
   gap: 2rem;
-
-
-
   .main-content-middle {
     width: 100%;
-
     .main-content-middle-container {
       .goodslaidering{
         overflow: hidden;
@@ -32,38 +27,19 @@
           .swiper-pagination-bullet-active{
             background-color: #1B825A;
           }
-
         }
       }
       .main-content-middle-wrap {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
-
       }
     }
-
   }
 }
 
-
-
-// псевдо классы
-
-
-
 @media #{$mobile-only-two} {
-  .main-content-blocks {
 
-    .main-content-left, .main-content-right {
-      display: none;
-    }
-
-    .main-content-middle {
-      width: 100%;
-
-    }
-  }
 
 }
 

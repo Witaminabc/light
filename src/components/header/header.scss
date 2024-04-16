@@ -5,15 +5,13 @@
   }
 
   .mobile-menu_active {
-    opacity: 1;
+    opacity: 1!important;
     display: block;
+    z-index: 1000;
   }
 }
 
 //отступы для карты
-.wr {
-  @include container();
-}
 
 .header-top {
   display: flex;
@@ -55,33 +53,40 @@
   .top-menu-wrapper {
     @include container();
     height: 65px;
-    .uMenuH{
+
+    .uMenuH {
       height: 65px;
-      ul{
+
+      ul {
         height: 65px;
         margin: 0;
         display: flex;
         align-items: center;
-        li{
+
+        li {
           padding: 0;
         }
-        .header-search{
+
+        .header-search {
           position: relative;
-          .header-search-img{
+
+          .header-search-img {
             position: absolute;
             height: 100%;
             display: flex;
             align-items: center;
             right: 20px;
             top: 0;
-            img{
+
+            img {
 
             }
           }
-          input{
+
+          input {
             width: 281px;
             height: 42px;
-            border-radius: 90px ;
+            border-radius: 90px;
             border: 1px solid black;
             padding: 0 20px;
             font-size: 12px;
@@ -111,34 +116,37 @@
   align-items: center;
   height: 65px;
   margin: 20px 0;
-  .header-contacts-end{
+
+  .header-contacts-end {
     display: flex;
     gap: 2rem;
     align-items: center;
   }
-.header-middle__adress{
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20.85px;
-  text-align: left;
-  display: flex;
-  align-items: flex-start;
-  img{
-    margin: 5px 5px 0 0;
+
+  .header-middle__adress {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.85px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+
+    img {
+      margin: 5px 5px 0 0;
+    }
+
   }
 
-}
-.header-middle__ordercall{
-  width: 164px;
-  height: 44px;
-  border-radius: 5px ;
-  background-color: #1B825A;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+  .header-middle__ordercall {
+    width: 164px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: #1B825A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
   .header-middle__logo {
@@ -176,19 +184,16 @@
       width: 40px;
     }
 
-    //.tg{
-    //  height: 30px;
-    //}
   }
 
   .header-middle__contact {
     line-height: 20px;
     display: flex;
     align-items: flex-start;
-    img{
+
+    img {
       margin: 5px 5px 0 0;
     }
-    //justify-content: center;
 
     div {
       display: flex;
