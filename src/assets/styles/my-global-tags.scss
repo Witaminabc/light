@@ -316,3 +316,33 @@ h5{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.btn-pink{
+  width: 242px;
+  height: 56px;
+  top: 1895px;
+  left: 1234px;
+  padding: 13px 16px 13px 16px;
+  gap: 10px;
+  border-radius: 50px ;
+  background: rgba(174, 41, 92, 1);
+
+}
+
+.sub-title{
+  font-family: Montserrat;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 72.8px;
+  text-align: left;
+  color: rgba(81, 121, 222, 1);
+  padding:10px 0;
+  @media #{$mobile-only-two} {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 36.4px;
+    text-align: center;
+
+  }
+}

@@ -29,12 +29,61 @@ const swiper = new Swiper('.swipergood', {
     breakpoints: {
 
         // 320: {
-        //     slidesPerView: 4,
-        //     spaceBetween: 40
-        // },
-        // 767: {
         //     slidesPerView: 1,
-        //     spaceBetween: 40
+        //     spaceBetween: 0
+        // },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 0
+        },
+        1280: {
+            slidesPerView: 5,
+            spaceBetween: 0
+        }
+    },
+    // Navigation arrows
+    //     nextButton: '.swiper2-button-next',
+    //     prevButton: '.swiper2-button-prev',
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
+
+const swiperportfolio = new Swiper('.swiperportfolio', {
+    // modules: [Navigation, Pagination, Scrollbar],
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    autoplay: {
+        delay: 5000,
+    },
+    longSwipesRatio: 0.5,
+    pagination: {
+        clickable: true,
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    navigation: {
+        nextEl: '.swiper2-button-next',
+        prevEl: '.swiper2-button-prev',
+    },
+    breakpoints: {
+
+        // 320: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 0
+        // },
+        // 768: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 0
+        // },
+        // 1280: {
+        //     slidesPerView: 5,
+        //     spaceBetween: 0
         // }
     },
     // Navigation arrows
@@ -46,6 +95,9 @@ const swiper = new Swiper('.swipergood', {
         el: '.swiper-scrollbar',
     },
 });
+
+
+
 
 (function($) {
     $(function() {

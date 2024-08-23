@@ -19,6 +19,8 @@ $screen: "screen";
 $mobile: "#{$screen}";
 //(от 0-768) при смене ширины использовать !important
 //$mobile-only-two: "#{$screen} and (max-width: #{map-get($breakpoints, 'tablet') - 1}px)";
+
+//чтобы не путать это и есть ALL ONLY
 $mobile-only-two: "#{$screen} and (max-width: #{map-get($breakpoints, 'tablet') - 1 }px)";
 
 //1
